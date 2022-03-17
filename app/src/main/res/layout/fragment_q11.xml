@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutQ11"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/accentblue"
+    tools:context=".fragments.Q11">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="18dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="18dp" />
+
+    <TextView
+        android:id="@+id/q11"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya_sans"
+        android:padding="10dp"
+        android:text="@string/q11"
+        android:textAlignment="center"
+        android:textColor="@color/lighttgold"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup11"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup11"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton11"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/q11">
+
+        <RadioButton
+            android:id="@+id/q11a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="Até R$ 10.000"
+            android:textColor="@color/lighttgold"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/q11b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="De R$ 10.001 até R$ 100.000"
+            android:textColor="@color/lighttgold"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/q11c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="De R$ 100.001 até R$ 500.000"
+            android:textColor="@color/lighttgold"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/q11d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="De R$ 500.001 até R$ 1.000.000"
+            android:textColor="@color/lighttgold"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/q11e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="Acima de R$ 1.000.001"
+            android:textColor="@color/lighttgold"
+            android:textSize="30sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextButton11"
+        android:layout_width="152dp"
+        android:layout_height="61dp"
+        android:backgroundTint="@color/lightblue"
+        android:fontFamily="@font/alegreya_sans"
+        android:text="@string/end_button_label"
+        android:textColor="@color/standartgold"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup11" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

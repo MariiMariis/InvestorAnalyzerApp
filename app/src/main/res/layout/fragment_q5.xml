@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutQ5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/accentblue"
+    tools:context=".fragments.Q5">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="18dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="18dp" />
+
+    <TextView
+        android:id="@+id/q5"
+        android:layout_width="322dp"
+        android:layout_height="178dp"
+        android:fontFamily="@font/alegreya_sans"
+        android:padding="10dp"
+        android:text="@string/q5"
+        android:textAlignment="center"
+        android:textColor="@color/lighttgold"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup5"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup5"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton5"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/q5">
+
+        <RadioButton
+            android:id="@+id/q5a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="Resgataria toda a aplicação e aplicaria na poupança"
+            android:textColor="@color/standartgold"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/q5b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="Manteria aplicação aguardando uma melhora do mercado"
+            android:textColor="@color/standartgold"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/q5c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="Aumentaria a aplicação para aproveitar as oportunidades do mercado"
+            android:textColor="@color/standartgold"
+            android:textSize="30sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextButton5"
+        android:layout_width="161dp"
+        android:layout_height="64dp"
+        android:backgroundTint="@color/lightblue"
+        android:fontFamily="@font/alegreya_sans"
+        android:text="@string/next_button_label"
+        android:textColor="@color/standartgold"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_app"
+    app:startDestination="@id/q1">
+    <fragment
+        android:id="@+id/q1"
+        android:name="br.infnet.investoranalyzerapp.fragments.Q1"
+        android:label="fragment_q1"
+        tools:layout="@layout/fragment_q1" >
+        <action
+            android:id="@+id/action_q1_to_q2"
+            app:destination="@id/q2" />
+    </fragment>
+    <fragment
+        android:id="@+id/q2"
+        android:name="br.infnet.investoranalyzerapp.fragments.Q2"
+        android:label="fragment_q2"
+        tools:layout="@layout/fragment_q2" >
+        <action
+            android:id="@+id/action_q2_to_q3"
+            app:destination="@id/q3" />
+    </fragment>
+    <fragment
+        android:id="@+id/q3"
+        android:name="br.infnet.investoranalyzerapp.fragments.Q3"
+        android:label="fragment_q3"
+        tools:layout="@layout/fragment_q3" >
+        <action
+            android:id="@+id/action_q3_to_q4"
+            app:destination="@id/q4" />
+    </fragment>
+    <fragment
+        android:id="@+id/q4"
+        android:name="br.infnet.investoranalyzerapp.fragments.Q4"
+        android:label="fragment_q4"
+        tools:layout="@layout/fragment_q4" >
+        <action
+            android:id="@+id/action_q4_to_q5"
+            app:destination="@id/q5" />
+    </fragment>
+    <fragment
+        android:id="@+id/q5"
+        android:name="br.infnet.investoranalyzerapp.fragments.Q5"
+        android:label="fragment_q5"
+        tools:layout="@layout/fragment_q5" >
+        <action
+            android:id="@+id/action_q5_to_q6"
+            app:destination="@id/q6" />
+    </fragment>
+    <fragment
+        android:id="@+id/q6"
+        android:name="br.infnet.investoranalyzerapp.fragments.Q6"
+        android:label="fragment_q6"
+        tools:layout="@layout/fragment_q6" >
+        <action
+            android:id="@+id/action_q6_to_q7"
+            app:destination="@id/q7" />
+    </fragment>
+    <fragment
+        android:id="@+id/q7"
+        android:name="br.infnet.investoranalyzerapp.fragments.Q7"
+        android:label="fragment_q7"
+        tools:layout="@layout/fragment_q7" >
+        <action
+            android:id="@+id/action_q7_to_q10"
+            app:destination="@id/q10" />
+    </fragment>
+    <fragment
+        android:id="@+id/q10"
+        android:name="br.infnet.investoranalyzerapp.fragments.Q10"
+        android:label="fragment_q10"
+        tools:layout="@layout/fragment_q10" >
+        <action
+            android:id="@+id/action_q10_to_q11"
+            app:destination="@id/q11" />
+    </fragment>
+    <fragment
+        android:id="@+id/q11"
+        android:name="br.infnet.investoranalyzerapp.fragments.Q11"
+        android:label="fragment_q11"
+        tools:layout="@layout/fragment_q11" />
+</navigation>

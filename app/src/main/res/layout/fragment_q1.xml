@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutQ1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/accentblue"
+    tools:context=".fragments.Q1">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="18dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="18dp" />
+
+
+    <TextView
+        android:id="@+id/q1"
+        android:layout_width="330dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/alegreya_sans"
+        android:padding="10dp"
+        android:text="@string/q1"
+        android:textAlignment="center"
+        android:textColor="@color/standartgold"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup1"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/q1">
+
+        <RadioButton
+            android:id="@+id/q1a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="Menos de 6 meses"
+            android:textColor="@color/lighttgold"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/q1b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="Entre 6 meses e 1 ano"
+            android:textColor="@color/lighttgold"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/q1c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="Entre 1 ano e 3 anos"
+            android:textColor="@color/lighttgold"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/q1d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="Acima de 3 anos"
+            android:textColor="@color/lighttgold"
+            android:textSize="30sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="152dp"
+        android:layout_height="61dp"
+        android:backgroundTint="@color/lightblue"
+        android:fontFamily="@font/alegreya_sans"
+        android:text="@string/next_button_label"
+        android:textColor="@color/standartgold"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

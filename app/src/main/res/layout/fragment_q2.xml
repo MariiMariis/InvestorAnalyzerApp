@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutQ2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/accentblue"
+    tools:context=".fragments.Q2">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="18dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="18dp" />
+
+    <TextView
+        android:id="@+id/q2"
+        android:layout_width="304dp"
+        android:layout_height="105dp"
+        android:fontFamily="@font/alegreya_sans"
+        android:padding="10dp"
+        android:text="@string/q2"
+        android:textAlignment="center"
+        android:textColor="@color/lighttgold"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton2"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/q2">
+
+        <RadioButton
+            android:id="@+id/q2a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="Preservação do capital para não perder o valor ao longo do tempo, assumindo baixos riscos de perdas"
+            android:textColor="@color/standartgold"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/q2b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="Aumento gradual do capital ao longo do tempo, assumindo riscos moderados"
+            android:textColor="@color/standartgold"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/q2c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="Aumento do capital acima da taxa de retorno média do mercado, mesmo que isso implique assumir riscos de perdas elevadas"
+            android:textColor="@color/standartgold"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/q2d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="Obter no curto prazo retornos elevados e significativamente acima da taxa de retorno média do mercado, assumindo riscos elevados"
+            android:textColor="@color/standartgold"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextButton2"
+        android:layout_width="161dp"
+        android:layout_height="64dp"
+        android:backgroundTint="@color/lightblue"
+        android:fontFamily="@font/alegreya_sans"
+        android:text="@string/next_button_label"
+        android:textColor="@color/standartgold"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

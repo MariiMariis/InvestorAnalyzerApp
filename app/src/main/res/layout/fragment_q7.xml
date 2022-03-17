@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutQ7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/accentblue"
+    tools:context=".fragments.Q7">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="18dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="18dp" />
+
+    <TextView
+        android:id="@+id/q7"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya_sans"
+        android:padding="10dp"
+        android:text="@string/q10"
+        android:textAlignment="center"
+        android:textColor="@color/lighttgold"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup7"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup7"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton7"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/q7">
+
+        <RadioButton
+            android:id="@+id/q7a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="Conto com o rendimento dessas aplicações para complementar minha renda mensal"
+            android:textColor="@color/standartgold"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/q7b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="Eventualmente posso resgatar parte das aplicações para fazer frente aos meus gastos. Contudo, não tenho intenção de resgatar no curto prazo e pretendo fazer aplicações regulares"
+            android:textColor="@color/standartgold"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/q7c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="Não tenho intenção de resgatar no curto prazo, mas não pretendo realizar novas aplicações"
+            android:textColor="@color/standartgold"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/q7d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="Não tenho intenção de resgatar no curto prazo e ainda pretende fazer aplicações regulares"
+            android:textColor="@color/standartgold"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextButton7"
+        android:layout_width="161dp"
+        android:layout_height="64dp"
+        android:backgroundTint="@color/lightblue"
+        android:fontFamily="@font/alegreya_sans"
+        android:text="@string/next_button_label"
+        android:textColor="@color/standartgold"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PerfilInvestidor</string>
+    <string name="q1">Por quanto tempo você pretende deixar o seu dinheiro investido?</string>
+    <string name="q2">Qual o objetivo desse investimento?</string>
+    <string name="q3">Qual das alternativas melhor classifica sua formação e experiência com o mercado financeiro?</string>
+    <string name="q4">Considerando seus rendimentos regulares, qual a porcentagem você pretende reservar para aplicações financeiras?</string>
+    <string name="q5">Caso suas aplicações sofressem uma queda superior a 30%, o que você faria?</string>
+    <string name="q6">Como está distribuído o seu patrimônio?</string>
+    <string name="q7">Em relação as aplicações e rendimentos, em qual dessas situações você se enquadra?</string>
+    <string name="q8">Indique em quais aplicações listadas neste link (https://www.bancopaulista.com.br/Arquivos/QuestionarioAPI.pdf) você já investiu e qual a frequência nos últimos dois anos.Obs: Efetue a somatória dos pontos referente a questão acima e escolha a alternativa equivalente:</string>
+    <string name="q9">Tomando por base as respostas da questão anterior, informar o volume aproximado que foi destinado a cada operação no período. Obs: Efetue a somatória dos pontos referente a questão acima e escolha a alternativa equivalente:</string>
+    <string name="q10">Qual a sua faixa de renda mensal?</string>
+    <string name="q11">Qual o valor aproximado do seu patrimônio?</string>
+    <string name="end_button_label">CONCLUIR</string>
+    <string name="creditText">Descubra seu perfil de investor em poucos minutos </string>
+    <string name="ownerText">*Teste desenvolvido pelo Banco Paulista </string>
+    <string name="restart_label">REFAZER</string>
+    <string name="next_button_label">PRÓXIMO</string>
+</resources>
